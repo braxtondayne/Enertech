@@ -1,0 +1,73 @@
+﻿.HomeContent { 
+    display: grid;
+    position: absolute;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 5vh 85vh 5vh;
+    grid-template-areas:
+        "TopNav TopNav"
+        "Picture Content"
+        "FooterSlant Footer";
+    max-height: 100vh;
+}
+.TopHome {
+    grid-area: TopNav;
+    background-color: #403D58;
+}
+.PictureHome {
+    grid-area: Picture;
+    background-color: aquamarine;
+}
+.SlantHome {
+    grid-area: FooterSlant;
+    background-color: #403D58;
+}
+.FooterHome {
+    grid-area: Footer;
+    background-color: #403D58;
+}
+.ContentHome {
+    grid-area: Content;
+    background-color: #F2EFEA;
+}
+body {
+position: relative;
+}
+.HomePic {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+.ContentHome {
+    display: inline-grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: .3fr 1fr;
+    grid-template-areas:
+            "HeaderHome"
+            "ParagraphHome";
+}
+.HeaderHome {
+    grid-area: HeaderHome;
+    justify-self: center;
+    align-self: end;
+}
+.Enertech_Head {
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+    font-size: 25px;
+    color: #FC7753;
+}
+.ParagraphHome {
+    grid-area: ParagraphHome;
+    background-color: #F2EFEA;
+    text-align: left;
+    color: #FC7753;
+    padding: 5% 10% 0% 15%;
+    font-size: 16px
+}
+.NavList li {
+    color: orangered;
+    list-style: none;
+    display: inline-block;
+}
